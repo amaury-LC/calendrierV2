@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    line-height: 1;
+
+ 
+
+}
+span{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    font-size: 1.2em;
+    
+}
+.unselectable { 
+      -webkit-user-select: none; 
+      -webkit-touch-callout: none; 
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none;    
+      color: #cc0000;
+      } 
+#headercalendar{
+
+    width:  1109px;
+    height: 50px;
+    /* background: #58b2a4; */
+    background : #3ba44d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.jour{
+    color : rgb(255, 255, 255);
+    width: 14.28%;
+    display : flex;
+    justify-content: center;
+    
+
+}
+
+#calendar{
+
+    
+    width : 1109px;
+    height: auto;
+    
+}
+
+#haut{
+    width: 1109px;
+    display : flex;
+    justify-content: space-between;
+    /* background :#58b2a4; */
+    background : rgba(59,164,77,1);
+}
+
+#moins{
+
+    width: 100px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus{
+
+    width: 100px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#moins1{
+
+    width : 20px;
+    height:20px;
+    transform: rotate(180deg);
+   
+
+
+}
+
+#plus1{
+
+    width : 20px;
+    height:20px;
+    
+
+
+}
+
+.valide{
+    border-radius:100px;
+    background:white;
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    #haut{
+        width: 260px;
+        display : flex;
+        justify-content: space-between;
+        /* background :#58b2a4; */
+        background : rgba(59,164,77,1);
+    }
+    
+    #headercalendar{
+
+        width:  260px;
+        height: 20px;
+        /* background: #58b2a4; */
+        background : rgba(59,164,77,1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    
+    }
+
+    span{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        font-size: 0.2em;
+        
+    }
+
+    #calendar{
+
+    
+        width : 260px;
+        height: auto;
+        
+    }
+
+    #moins{
+        margin-top: 5px;
+        margin-right : 60px;
+        padding: 0px;
+        width: 30px;
+        height:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #plus{
+        
+        margin-top: 5px;
+        margin-left : 60px;
+        width: 30px;
+        height:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #moins1{
+        margin-top: 6px;
+        width : 10px;
+        height:10px;
+        transform: rotate(180deg);
+   
+    
+    
+    }
+    
+    #plus1{
+    
+        width : 10px;
+        height:10px;
+        margin-top: -10px;
+      
+    
+    
+    }
+    
+    .mois{
+
+        margin-top : 8px;
+
+    }
+
+    .annee{
+
+        margin-top : 8px;
+
+    }
+
+    #haut{
+        width: 260px;
+        display : flex;
+        justify-content: space-between;
+        /* background :#58b2a4; */
+        background : rgba(59,164,77,1);
+        
+    }
+
+    .valide{
+        border-radius:100px;
+        background:white;
+        width:20px;
+        height:20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
