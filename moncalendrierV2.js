@@ -87,13 +87,13 @@ class moncalendrier {
        
     }
 
-    click1(id) {
+    click1(id,background) {
 
         if(this.datesave.length == 0){
     
             $("#" + id).css("background", "#3ba44d");
             this.datesave.push(id);
-            console.log(this.datesave);
+            // console.log(this.datesave);
     
         
         }
@@ -105,7 +105,8 @@ class moncalendrier {
     
                 if(this.datesave[i] == id){
     
-                    $("#" + id).css("background", "white");
+                    $("#" + id).css("background", "");
+                    // $("#" + id).css("opacity", 0.4);
     
     
                     this.datesave.splice(i,1);
@@ -117,6 +118,8 @@ class moncalendrier {
             if(existepas){
     
                 $("#" + id).css("background", "#3ba44d");
+                
+
                 this.datesave.push(id);
     
             }
@@ -135,7 +138,7 @@ class moncalendrier {
 		let ms = d.valueOf(); // GMT
 		d.setMonth(0);
         d.setDate(4); // Thu in Week 1
-        console.log(Math.round((ms - d.valueOf()) / (7 * 864e5)) + 1);
+        // console.log(Math.round((ms - d.valueOf()) / (7 * 864e5)) + 1);
 		return Math.round((ms - d.valueOf()) / (7 * 864e5)) + 1;
 	}
 
@@ -233,7 +236,7 @@ class moncalendrier {
             // }
             if(lundi == 1){
                 backgroundjour = "#10CA13";
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
             }
             else if(lundi == 2){
 
@@ -242,7 +245,7 @@ class moncalendrier {
             }
             else if(lundi == 3){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 4){
@@ -252,7 +255,7 @@ class moncalendrier {
             }
             else if(lundi == 5){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 6){
@@ -262,7 +265,7 @@ class moncalendrier {
             }
             else if(lundi == 7){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 8){
@@ -272,7 +275,7 @@ class moncalendrier {
             }
             else if(lundi == 9){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 10){
@@ -282,7 +285,7 @@ class moncalendrier {
             }
             else if(lundi == 11){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 12){
@@ -292,7 +295,7 @@ class moncalendrier {
             }
             else if(lundi == 13){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 14){
@@ -302,7 +305,7 @@ class moncalendrier {
             }
             else if(lundi == 15){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 16){
@@ -312,7 +315,7 @@ class moncalendrier {
             }
             else if(lundi == 17){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 18){
@@ -322,7 +325,7 @@ class moncalendrier {
             }
             else if(lundi == 19){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 20){
@@ -331,7 +334,7 @@ class moncalendrier {
 
             }else if(lundi == 21){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 22){
@@ -341,7 +344,7 @@ class moncalendrier {
             }
             else if(lundi == 23){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 24){
@@ -351,7 +354,7 @@ class moncalendrier {
             }
             else if(lundi == 25){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 26){
@@ -361,7 +364,7 @@ class moncalendrier {
             }
             else if(lundi == 27){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 28){
@@ -371,7 +374,7 @@ class moncalendrier {
             }
             else if(lundi == 29){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 30 ){
@@ -381,7 +384,7 @@ class moncalendrier {
             }
             else if(lundi == 31){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 32){
@@ -391,7 +394,7 @@ class moncalendrier {
             }
             else if(lundi == 33){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 34){
@@ -401,7 +404,7 @@ class moncalendrier {
             }
             else if(lundi == 35){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 36){
@@ -411,7 +414,7 @@ class moncalendrier {
             }
             else if(lundi == 37){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 38){
@@ -421,7 +424,7 @@ class moncalendrier {
             }
             else if(lundi == 39){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 40){
@@ -431,7 +434,7 @@ class moncalendrier {
             }
             else if(lundi == 41){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 42){
@@ -441,7 +444,7 @@ class moncalendrier {
             }
             else if(lundi == 43){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 44){
@@ -451,7 +454,7 @@ class moncalendrier {
             }
             else if(lundi == 45){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 46){
@@ -461,7 +464,7 @@ class moncalendrier {
             }
             else if(lundi == 47){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 48){
@@ -471,7 +474,7 @@ class moncalendrier {
             }
             else if(lundi == 49){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 50){
@@ -481,7 +484,7 @@ class moncalendrier {
             }
             else if(lundi == 51){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
             else if(lundi == 52){
@@ -491,7 +494,7 @@ class moncalendrier {
             }
             else if(lundi == 53){
 
-                backgroundjour = "rgba(16,202,19,.4)";
+                backgroundjour = "rgba(16,202,19,.2)";
 
             }
            
@@ -507,7 +510,7 @@ class moncalendrier {
     
             var datejour = "dateDu" + dateannee + "-" + datejourmois + "-" + jour2;
     
-            html += '<div  onclick="calendrier.click1(\'' + datejour + '\')"  style="background : '+backgroundjour+';width: 14%;height : 40px;display:flex;justify-content: center;align-items: center;"><div class="valide" id="' + datejour + '" ><span style="color : black">' + i + '</span></div></div><br>';
+            html += '<div  onclick="calendrier.click1(\'' + datejour + '\',\'' + backgroundjour + '\')"  style="background : '+backgroundjour+';width: 14%;height : 40px;display:flex;justify-content: center;align-items: center;"><div class="valide"  id="' + datejour + '" ><span style="color : black">' + i + '</span></div></div><br>';
         }
     
         $("#calendar"+moislettre).html(html);
